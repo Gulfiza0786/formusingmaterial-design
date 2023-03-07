@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bacgroundcolor"
+    android:padding="10dp">
+<!--    1st-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/firstname"
+           android:drawableStart="@drawable/baseline_person_add_24"
+            android:drawablePadding="20dp"
+            android:hint=" First name "
+            android:inputType="textCapCharacters">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--2nd -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+           android:drawableStart="@drawable/baseline_person_add_24"
+            android:drawablePadding="20dp"
+            android:id="@+id/Lasttname"
+            android:hint=" Last name"
+            android:inputType="textCapCharacters">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--        3rd-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+              android:drawableStart="@drawable/baseline_local_phone_24"
+                android:drawablePadding="20dp"
+                android:id="@+id/phoneNo"
+                android:hint="@string/mobile_no"
+                android:inputType="number">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        4rth-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/baseline_local_phone_24"
+                android:drawablePadding="20dp"
+                android:id="@+id/AltmobNo"
+                android:hint="@string/alternate_mobile_no"
+                android:inputType="number">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        5th-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_marginTop="10dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="20dp"
+                android:id="@+id/emailid"
+                android:hint="Email Address "
+                android:inputType="textEmailAddress">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        radiobutton-->
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/gender"
+    android:textStyle="bold"
+    android:layout_marginTop="15dp"
+    android:padding="10dp"
+    android:textColor="@color/teal_700"
+    android:text="@string/gender"
+    android:textSize="25dp" />
+
+<!--        button view-->
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/gender"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:text="Male"
+                android:textSize="18dp"
+                />
+            <RadioButton
+                android:id="@+id/buttonfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textColor="@color/white"
+                android:padding="3dp"
+                android:text="@string/female"
+                android:textSize="18dp"
+
+                />
+            <RadioButton
+                android:id="@+id/buttontrans"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textColor="@color/white"
+                android:text="Transgender"
+                android:padding="3dp"
+                android:textSize="18dp"
+
+                />
+        </RadioGroup>
+
+
+<!--        textview-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/hobbies"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="Hobbies"
+            android:textSize="25dp" />
+
+<!--checkbox-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <CheckBox
+                android:id="@+id/programming"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textColor="@color/white"
+                android:text="programming"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textSize="18sp"
+                />
+            <CheckBox
+                android:id="@+id/Study_Noble"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:textColor="@color/white"
+                android:text="study noble"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                />
+            <CheckBox
+                android:id="@+id/Watching_Movie"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:text="watching movie"
+                android:textSize="18sp"
+                />
+            <CheckBox
+                android:id="@+id/traveling"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:text="@string/traveling"
+                android:textSize="18sp"
+                />
+            <CheckBox
+                android:id="@+id/Gaming"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="@string/gaming"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:text="submit"
+            android:layout_centerInParent="true"
+            android:background="@color/buttonbackground"
+            android:layout_gravity="center"
+            android:textSize="18sp" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

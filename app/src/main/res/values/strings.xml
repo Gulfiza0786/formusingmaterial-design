@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Application form</string>
+    <string name="gender">Gender</string>
+    <string name="alternate_mobile_no">Alternate Mobile No</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="transgender">transgender</string>
+    <string name="gaming">Gaming</string>
+    <string name="traveling">Traveling</string>
+    <string name="female">Female</string>
+</resources>
